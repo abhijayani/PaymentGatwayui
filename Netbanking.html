@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Banking</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1>
+    <h3>
+        Show and Hide div elements using radio buttons
+    </h3>
+
+    <!---------------- Redio Button -------jquery down script tag-------------------------->
+    <div class=" btn-2222">
+          <input type="radio" id="html" name="fav_language" value="googlepay" class=" btn-1">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="phonepe" class=" btn-1">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="paytm" class=" btn-1">
+          <label for="javascript">JavaScript</label>
+          <input type="radio" id="UPI" name="fav_language" value="upi" class=" btn-1">
+          <label for="UPI">JavaScript</label>
+    </div>
+
+
+    <!------------- img button click---------------Javascript down script tag------------------------- -->
+    <!-- <div class="d-flex btn-2222">
+        <div class="btn-5"> <img src="images/googlePay.svg" alt="work process" class=" btn-1"></div>
+        <div> <img src="images/PhonePe.svg" alt="work" class="btn-1"></div>
+        <div> <img src="images/Paytm.svg" alt="work process" class="btn-1">
+        </div>
+        <div> <img src="images/UPI-Logo-vector 1.svg" alt="work process" class="btn-1">
+        </div>
+
+    </div> -->
+
+
+
+
+    <div>
+        <select class="googlepay selectt">
+            <option>@okicici</option>
+            <option>@oksbi</option>
+            <option>@okaxis</option>
+            <option>@okhdfcbank</option>
+            <option>Other UPI</option>
+        </select>
+        <select class="phonepe selectt">
+            <option>@ybl</option>
+            <option>@axl</option>
+            <option>@ibl</option>
+            <option>Other UPI</option>
+        </select>
+        <select class="paytm selectt">
+            <option>@paytm</option>
+            <option>Other UPI</option>
+        </select>
+        <select class="upi selectt">
+            <option>@amazone</option>
+            <option>Other UPI</option>
+        </select>
+    </div>
+
+
+
+
+    <!---------------- Redio Button -------jquery down script tag-------------------------->
+
+
+    <script type="text/javascript">
+        $(".selectt").css("display", "none");
+        $(document).ready(function () {
+            $('input[type="radio"]').click(function () {
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".selectt").not(targetBox).hide();
+                $(targetBox).show();
+            });
+        });
+    </script>
+
+
+
+    <!------------- img button click---------------Javascript down script tag------------------------- -->
+
+    <script>
+     // let buttons = document.querySelectorAll('.btn-1');
+        // let btnlength = buttons.length;
+        // let images = document.querySelectorAll('.img-1');
+
+        // // debugger;
+
+        // for (let i = 0; i < btnlength; i++) {
+        //     // debugger;
+        //     images[i].style.display = 'none';
+        //     // debugger;
+        //     buttons[i].addEventListener('click', function () {
+        //         // console.log("clicked");
+        //         // debugger;
+        //         images.forEach(item => {
+        //             item.style.display = 'none';
+        //             // console.log(item);
+
+        //         })
+        //         // debugger;
+        //         images[i].style.display = 'block';
+        //         images[3].style.display = 'none';
+
+
+        //     });
+
+        //     images[0].style.display = 'block';
+        // }
+    </script>
+
+</body>
+
+</html>

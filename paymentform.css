@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+:root {
+    --line-height-none: none;
+    --p-size: 16px;
+    --p-font-weight: 600;
+    --p-font-color: black;
+    --p-font-color2: rgba(0, 19, 37, 0.64);
+    --margin-right: 10px;
+}
+
+.nav img {
+    width: 22px;
+}
+
+.color2 {
+    color: var(--p-font-color2);
+    font-size: 14px;
+}
+
+hr {
+    margin-bottom: 12px;
+}
+
+/*Left Side card*/
+.card1 {
+    background: #ccdbe2;
+    height: 100%;
+}
+
+p {
+    font-size: var(--p-size);
+    font-weight: var(--p-font-weight);
+    color: var(--p-font-color);
+}
+
+.card3 p {
+    margin-bottom: 12px;
+}
+
+.nav {
+    flex-wrap: nowrap;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: black;
+}
+
+.nav-tabs .nav-link.active {
+    color: rgba(0, 19, 37, 0.64);
+    background-color: #d6e1e4;
+    width: 80%;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+/* 2222222222222222222222222222 */
+
+.googlePay-btn input,
+.googlePay-btn input:focus,
+.googlePay-btn select {
+    background: rgb(243, 244, 245);
+    border-width: 0px 0px 1px;
+    border-radius: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 19, 37, 0.16);
+    color: rgba(0, 19, 37, 0.92);
+    outline: 0px;
+    padding: 10px 90px 10px 20px;
+}
+
+.input-group-text {
+    background-color: rgb(243, 244, 245);
+    border-top: 0;
+    border-right: 0;
+}
+
+.color1 {
+    font-size: 11px;
+    color: rgba(0, 19, 37, 0.64);
+}
+
+input::placeholder {
+    color: rgba(0, 19, 37, 0.64);
+    font-weight: 500;
+}
+
+label {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    color: rgba(0, 19, 37, 0.64);
+}
+
+.select-box select {
+    word-wrap: normal;
+    padding: 12px 0px 12px 20px;
+    color: white;
+    background: rgb(243, 244, 245);
+    border-width: 0px 0px 1px;
+    border-radius: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 19, 37, 0.16);
+    color: rgba(0, 19, 37, 0.92);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    outline: 0px;
+}
+
+.divi-1 button {
+    padding: 9px;
+    border-radius: 8px;
+    background-color: rgb(232, 0, 113);
+    border: none;
+    color: white;
+}
+
+/***************** 3rd right option *****************/
+
+.rightdiv input[type=radio] {
+    width: 19px;
+    height: 18px;
+    margin-left: 160px;
+}
+
+.op3span {
+    color: red;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
